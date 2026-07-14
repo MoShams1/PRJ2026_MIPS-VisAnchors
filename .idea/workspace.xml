@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d5e28e-edfe-4a44-b8f0-6e9f77490ab2" name="Changes" comment="created env; installed numpy matplotlib pandas; added data">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Exp1/exp01_001_20260513_143116.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Exp1/exp01_001_20260513_143116.json" afterDir="false" />
+    <list default="true" id="33d5e28e-edfe-4a44-b8f0-6e9f77490ab2" name="Changes" comment="created fig1A fig1B">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exp1.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,21 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MoShams1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MoShams1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MoShams1/PRJ2026_MIPS-VisAnchors.git",
-    "accountId": "969ccad6-8d22-4fc7-ae82-475c627f1cee"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MoShams1/PRJ2026_MIPS-VisAnchors.git&quot;,
+    &quot;accountId&quot;: &quot;969ccad6-8d22-4fc7-ae82-475c627f1cee&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3GJ4QDgo8OxW6MRmgMOD8DrDlcq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,6 +48,7 @@
   "keyToString": {
     "Python.exp1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Python"
   }
@@ -107,11 +106,20 @@
       <option name="project" value="LOCAL" />
       <updated>1783676746779</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created fig1A fig1B">
+      <option name="closed" value="true" />
+      <created>1783694222838</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783694222839</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created env; installed numpy matplotlib pandas; added data" />
-    <option name="LAST_COMMIT_MESSAGE" value="created env; installed numpy matplotlib pandas; added data" />
+    <MESSAGE value="created fig1A fig1B" />
+    <option name="LAST_COMMIT_MESSAGE" value="created fig1A fig1B" />
   </component>
 </project>

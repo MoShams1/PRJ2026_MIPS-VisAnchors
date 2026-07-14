@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import json
 from pathlib import Path
 
+from matplotlib.pyplot import xticks
+
 data_folder = "data/Exp1"
 all_files = Path(data_folder).glob("*.json")
 
@@ -14,8 +16,8 @@ for file in all_files:
 
     all_data.append(data)
 
+# todo: modify the first plot DONE
 # todo: make a function to "clean" plots
-# todo: modify the first plot
 # todo: make plot for the two-dot conditions
 # todo: make plot for the eccentricity
 
@@ -39,23 +41,33 @@ dist_cnd_mat = np.array(subjects)
 # ----------------------------------------------------------------------------
 # panel A
 
-plt.figure()
+plt.figure(figsize=(5, 4))
 ax = plt.gca()
 ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
 dist_cnd_m = dist_cnd_mat.mean(axis=0)
 dist_cnd_sem = dist_cnd_mat.std(axis=0, ddof=1) / np.sqrt(nsubj)
-plt.bar(unique_cnds, dist_cnd_m, yerr=dist_cnd_sem)
+plt.bar(unique_cnds,
+        dist_cnd_m,
+        yerr=dist_cnd_sem,
+        color="lightgray")
 plt.xlabel("Conditions")
 plt.ylabel("Replica distance (dva)")
+plt.xticks(range(12))
 
-for row in dist_cnd_mat:
+for subj in dist_cnd_mat:
     plt.scatter(
         unique_cnds,
-        row,
-        color="black"
+        subj,
+        edgecolor="none",
+        facecolor="black",
+        alpha=.3,
+        s=20
     )
+
+plt.axhline(y=6, color='black', linestyle="--", linewidth=1)
+
 plt.savefig("fig1A.svg")
 
 # ----------------------------------------------------------------------------
@@ -98,10 +110,10 @@ plt.bar(cnd_list,
 plt.xlabel("Number of visual markers")
 plt.ylabel("Replica distance (dva)")
 
-for row in subjects_nvis:
+for subj in subjects_nvis:
     plt.scatter(
         cnd_list,
-        row,
+        subj,
         edgecolor="none",
         facecolor="black",
         alpha=.3,
