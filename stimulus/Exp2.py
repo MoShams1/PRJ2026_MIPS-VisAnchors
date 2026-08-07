@@ -13,7 +13,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 # -------------------------------------------------
 # insert session meta data
 # -------------------------------------------------
-subject = 'test1'
+subject = 'test'
 # -------------------------------------------------
 # destination file
 # -------------------------------------------------

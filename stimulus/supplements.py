@@ -73,6 +73,7 @@ def get_time():
 
 
 def opening_msg(win):
+    text_size = 0.5
     msg = f'In this experiment, your task is to maintain your gaze at ' \
           f'the fixation cross and memorize the location of a single ' \
           f'dot (in red or blue) or two dots (in red and blue) that ' \
@@ -83,13 +84,13 @@ def opening_msg(win):
           f'You can quit the experiment any time by pressing the Escape ' \
           f'button.'
 
-    inst_text = visual.TextStim(win, text=msg, color='white', height=.5,
+    inst_text = visual.TextStim(win, text=msg, color='white', height=text_size,
                                 alignText='left')
     inst_text.pos = (0, 2)
     inst_text.draw()
 
     commands = '[Escape]: Cancel\t[Space]: OK'
-    cmnd_text = visual.TextStim(win, text=commands, color='white', height=.5,
+    cmnd_text = visual.TextStim(win, text=commands, color='white', height= text_size,
                                 alignText='right')
     cmnd_text.pos = (0, -2)
     cmnd_text.draw()
@@ -103,25 +104,29 @@ def opening_msg(win):
 
 
 def opening_msg2(win):
+    text_size = 0.7
     msg = (
-        'In this experiment, your task is to maintain your gaze at '
-        'the fixation cross while a dot (in red or blue) or two dots '
-        '(in red and blue) flash.\n\n'
-        'Please adjust the replica to match the distance as you '
-        'perceive it, while maintaining your fixation.\n\n'
-        'You can stop the experiment at any time by right-clicking.\n\n'
-        'Left click = start experiment\n'
-        'Right click = quit experiment'
+        '1. Maintain your gaze at the fixation cross. \n\n'
+        '2. Pay attention to the flashing coloured dots.\n\n'
+        '3. How far are the two coloured dots apart?\n\n'
+        '4. Use the mouse to replicate the observed distance.\n\n'
+        '5. Place each colour on the same side where you saw it.\n\n'
+        '6. While adjusting, you may look at the replica.\n\n\n' 
+        
+        'Left click = start / confirm \n'
+        'Right click = quit'
     )
 
     inst_text = visual.TextStim(
         win=win,
         text=msg,
         color='white',
-        height=.5,
+        height= text_size,
+        wrapWidth= 30,
+        pos=(8, 0),
         alignText='left'
     )
-    inst_text.pos = (0, 1)
+    #inst_text.pos = (5, 0)
 
     mouse = event.Mouse(win=win, visible=False)
 

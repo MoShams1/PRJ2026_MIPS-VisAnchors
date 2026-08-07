@@ -25,6 +25,8 @@ data_path = os.path.join('..', 'data','Exp1', file_name)
 # initialize display
 # -------------------------------------------------
 monitor = monitors.Monitor('prim_mon', width=200, distance=180)
+
+
 monitor.setSizePix([1920, 1080])
 win = visual.Window(monitor=monitor,
                     units='deg',
